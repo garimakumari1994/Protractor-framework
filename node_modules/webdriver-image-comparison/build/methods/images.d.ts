@@ -1,0 +1,10 @@
+import { RectanglesOutput } from './rectangles.interfaces';
+import { IgnoreBoxes, ImageCompareOptions, ImageCompareResult, ResizeDimensions } from './images.interfaces';
+import { FullPageScreenshotsData } from './screenshots.interfaces';
+import { Executor } from './methods.interface';
+export declare function checkBaselineImageExists(actualFilePath: string, baselineFilePath: string, autoSaveBaseline: boolean): Promise<void>;
+export declare function executeImageCompare(executor: Executor, options: ImageCompareOptions, isViewPortScreenshot?: boolean): Promise<ImageCompareResult | number>;
+export declare function makeCroppedBase64Image(base64Image: string, rectangles: RectanglesOutput, resizeDimensions?: number | ResizeDimensions): Promise<string>;
+export declare function makeFullPageBase64Image(screenshotsData: FullPageScreenshotsData): Promise<string>;
+export declare function saveBase64Image(base64Image: string, filePath: string): Promise<void>;
+export declare function addBlockOuts(screenshot: string, ignoredBoxes: IgnoreBoxes[]): Promise<string>;

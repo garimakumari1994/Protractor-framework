@@ -1,0 +1,34 @@
+{
+  "name": "quickheal",
+  "version": "1.0.0",
+  "description": "Automate Angular Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Garima",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@types/node": "^12.12.42",
+    "@types/selenium-webdriver": "^4.0.1",
+    "mail-listener2": "^0.3.1",
+    "protractor-beautiful-reporter": "^1.2.8",
+    "protractor-image-comparison": "^3.3.0",
+    "protractor-jasmine2-html-reporter": "0.0.7",
+    "ts-node": "^8.3.0",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "jasmine": "^3.4.0",
+    "lodash": "^4.17.15",
+    "log4js": "^4.5.1",
+    "mssql": "^4.3.7",
+    "protractor": "^5.4.2",
+    "protractor-html-reporter-2": "^1.0.4",
+    "protractor-robot-remote": "^1.0.0",
+    "protractor-take-screenshots-on-demand": "^1.2.0"
+  }
+}
