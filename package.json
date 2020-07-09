@@ -21,13 +21,16 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
+    "allure-commandline": "^2.13.0",
     "fs-extra": "^7.0.1",
     "jasmine": "^3.4.0",
+    "jasmine-allure-reporter": "^1.0.2",
     "lodash": "^4.17.15",
     "log4js": "^4.5.1",
     "mssql": "^4.3.7",
     "protractor": "^5.4.2",
     "protractor-html-reporter-2": "^1.0.4",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
     "protractor-robot-remote": "^1.0.0",
     "protractor-take-screenshots-on-demand": "^1.2.0"
   }

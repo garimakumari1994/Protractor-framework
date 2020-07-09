@@ -61,44 +61,42 @@ it('Verify rule is created successfully for Light Theme', function () { return _
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0:
-                sidebar = protractor_1.element(protractor_1.by.className('sidebar'));
+                sidebar = protractor_1.element(protractor_1.by.xpath("//i[@class='nav-icon nav-img-logo']"));
                 rulebuilderIcon = protractor_1.element(protractor_1.by.linkText('Rule Builder'));
                 EC = ptor_1.protractor.ExpectedConditions;
                 ruleName = protractor_1.element(protractor_1.by.id('ruleName'));
-                return [4 /*yield*/, protractor_1.browser
-                        .actions()
-                        .mouseMove(sidebar)
-                        .mouseMove(rulebuilderIcon)
-                        .click()
-                        .perform()];
-            case 1:
-                _a.sent();
+                protractor_1.browser
+                    .actions()
+                    .mouseMove(sidebar)
+                    .mouseMove(rulebuilderIcon)
+                    .click()
+                    .perform();
                 //browser.sleep(30000);
                 return [4 /*yield*/, protractor_1.element(protractor_1.by.partialButtonText('Create Rule')).click()];
-            case 2:
+            case 1:
                 //browser.sleep(30000);
                 _a.sent();
                 return [4 /*yield*/, ruleName.clear()];
-            case 3:
+            case 2:
                 _a.sent();
                 return [4 /*yield*/, ruleName.sendKeys("Rule1")];
-            case 4:
+            case 3:
                 _a.sent();
                 return [4 /*yield*/, protractor_1.element(protractor_1.by.buttonText('Medium')).click()];
-            case 5:
+            case 4:
                 _a.sent();
                 return [4 /*yield*/, protractor_1.element(protractor_1.by.id('mat-input-0')).sendKeys('Is Process Signed = Signed')];
-            case 6:
+            case 5:
                 _a.sent();
                 return [4 /*yield*/, protractor_1.element(protractor_1.by.buttonText('Save')).click()];
-            case 7:
+            case 6:
                 _a.sent();
                 return [4 /*yield*/, protractor_1.element(protractor_1.by.xpath("//span[@class='noty-msg']")).getText()];
-            case 8:
+            case 7:
                 msgdiv = _a.sent();
                 console.log("Validation message:-", msgdiv);
                 return [4 /*yield*/, expect(msgdiv).toBe("Rule Added Successfully")];
-            case 9:
+            case 8:
                 _a.sent();
                 return [2 /*return*/];
         }

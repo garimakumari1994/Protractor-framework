@@ -11,11 +11,11 @@ describe('Quick heal rulebulider App', async() => {
   });
   it('Verify rule is created successfully for Light Theme', async () => {
    
-    let sidebar = element(by.className('sidebar'));
+    let sidebar = element(by.xpath("//i[@class='nav-icon nav-img-logo']"));
     let rulebuilderIcon = element(by.linkText('Rule Builder'));
     let EC = protractor.ExpectedConditions;
     let ruleName = element(by.id('ruleName'));
-    await browser
+    browser
       .actions()
       .mouseMove(sidebar)
       .mouseMove(rulebuilderIcon)
